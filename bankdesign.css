@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: black; */
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+
+.table_container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td,
+th {
+    padding: 5px 0px 5px 0px;
+    border: 2px solid #0dcaf080;
+}
+
+#table_heading {
+    /* background-color: blue; */
+    color: white;
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+
+table tr td input {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 95%;
+    font-weight: bold;
+}
+
+/* input:focus {
+    height: auto;
+} */
+
+td {
+    border: 3px solid gray;
+    text-align: center;
+    /* width: auto; */
+    /* display: none; */
+    margin-top: 2px;
+}
+
+
+#create_row_div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#create_row_div input {
+    padding: 5px;
+}
+
+.actions {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    padding: 7px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 10px;
+}
+
+#submitForm {
+}
+
+#row_number {
+    width: 60%;
+}
+
+.actions_buttons {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.update {
+    background-color: orange;
+}
+
+.delete {
+    background-color: darkred;
+}
+
+@media only screen and (max-width: 770px) {
+    input {
+        width: 98%;
+    }
+
+    table {
+        width: 99vw;
+    }
+}
+
+#search_ID {
+    padding: 5px;
+    width: 100%;
+}
+
+#updateModal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* visibility: hidden; */
+}
+
+#update_container {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#update_container form {
+    width: 100%;
+    row-gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.update_container_input_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 5px;
+}
+
+#input_container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+#update_container form input {
+    width: 100%;
+    padding: 5px;
+}
+
+textarea {
+    width: 100% !important;
+}
+#update_Data {
+    width: 97%;
+}
+#close_modal {
+    position: relative;
+    float: right;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#initial_table_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#show_more {
+    position: fixed;
+    top: 0;
+    background-color: #00000060;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show_more_design{
+    background-color: red;
+    font-size: 20px;
+    padding: 2px;
+    margin-left:5px;
+    height: 20px !important;
+    width: 30px;
+}
